@@ -9,6 +9,22 @@
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     </head>
     <style>
+        .table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        div {
+            text-align: center;
+        }
+        form {
+            text-align: right;
+        }
+        p {
+            text-align: right;
+        }
+        h2 {
+            text-align: center;
+        }
         body{
             align-content: center;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -16,9 +32,8 @@
         }
     </style>
     <body>
-        <div class="col-lg-8"><h2 class="display-6" style="color:rgb(0, 0, 0);font-weight:300;">Fresh Choice Student's Cafe<br>Shopping Cart</h2></div>
+        <div class="col-lg-8"><h2 class="display-6" style="color:rgb(0, 0, 0);font-weight:300; font-family: Verdana, Geneva, Tahoma, sans-serif" al>Your Basket</h2></div>
         <div class="container" style="padding-top: 80px;">
-        <div class="card" style="width:900px;background-color:rgb(0, 0, 0);height:600px;padding-left: 200px;padding-top: 100px;">
             <table class="table" style="width: 500px; height: 250px;">
                 <tr style="background-color:rgb(248, 149, 218)">
                     <th>Items </th>
@@ -34,11 +49,15 @@
                     <th>Total Cost</th>
                     <th><%= amount %></th>
                 </tr>
+                
             </table>
             
-            <a href="https://morethankyounotes.com/wp-content/uploads/2017/02/Customer-Thank-You-Note-1.png" style="width:30%;font-weight: bold;margin-left: 150px;"class="btn btn-warning">Proceed to buy<i class="bi bi-cart4"></i></a>
+            <p style="color: rgb(0, 0, 0);">
+                <b>Place your order here</b></p><br><br>
+                <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_KnJ76W9z7oMgdl" async> </script> </form>
             <br><br>
-            <b style="padding-left: 120px; color: rgb(255, 255, 255);">Real.Fresh.Food || Please visit again</b>
+            
+            
         </div>
         </div>
     </body>
